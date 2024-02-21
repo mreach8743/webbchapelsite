@@ -1,0 +1,37 @@
+/*** Gallery ***/
+
+.gallery_images .gallery-item{
+	margin: 3.333333% 3.3333333% 0 0;
+	width: 30%!important;
+	background: #f7f7f7;
+	position: relative;
+	display: inline-block;
+}
+
+.gallery_images .gallery-item:nth-child(3n+3){
+	margin-right: 0;
+}
+
+.gallery_images img{
+	width: 80px;
+	height: 80px;
+	border: 1px solid #d3d7da!important;
+}
+
+#manage_gallery{
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+#empty_gallery{
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+#icon-edit.icon32-posts-listings {
+	display: none;
+}
+
+.gallery-item a{
+	display: inline-block;
+}

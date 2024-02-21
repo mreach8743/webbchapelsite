@@ -1,0 +1,24 @@
+#pjWrapper a { color: #1ec290; } 
+
+#pjWrapper .dropdown-menu,
+#pjWrapper .btn { color: #fff; background: #1ec290; border: 1px solid #1db084;}
+
+#pjWrapper .dropdown-menu a { color: #fff; }
+#pjWrapper .dropdown-menu a:hover { background: #1db084; }
+
+#pjWrapper .btn:hover,
+#pjWrapper .btn.active { background: #1db084; border: 1px solid #128260;}
+
+.pjCalMonths table th { background: #fafafa; color: #5e5a59; }  
+
+#pjWrapper .thumbnail,
+#pjWrapper .pjCalTable,
+#pjWrapper .pjCalMonths table,
+#pjWrapper .pjIcCalendarTable td,
+#pjWrapper .pjIcCalendarTable { background: #fff; }
+
+#pjWrapper .pjCalMonths th .active { background: #1ec290; }
+
+#pjWrapper .pjIcCalendarTable td.pjIcMonthAlt:hover { background: #f3f5f4; }
+
+#pjWrapper .pjIcCalendarTable td:hover { background: #1ec290; }

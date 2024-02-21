@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Slab Light'), local('RobotoSlab-Light'), url(https://fonts.gstatic.com/s/robotoslab/v6/dazS1PrQQuCxC3iOAJFEJUo2lTMeWA_kmIyWrkNCwPc.woff2) format('woff2'), url(https://fonts.gstatic.com/s/robotoslab/v6/dazS1PrQQuCxC3iOAJFEJR_xHqYgAV9Bl_ZQbYUxnQU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v6/y7lebkjgREBJK96VQi37Zo4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2'), url(https://fonts.gstatic.com/s/robotoslab/v6/y7lebkjgREBJK96VQi37ZobN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(https://fonts.gstatic.com/s/robotoslab/v6/dazS1PrQQuCxC3iOAJFEJYlIZu-HDpmDIZMigmsroc4.woff2) format('woff2'), url(https://fonts.gstatic.com/s/robotoslab/v6/dazS1PrQQuCxC3iOAJFEJTqR_3kx9_hJXbbyU8S6IN0.woff) format('woff');
+}
+
+body #pjWrapper { font-family: 'Roboto Slab', serif; }
+
+#pjWrapper a { color: #e37d4c; } 
+
+#pjWrapper .dropdown-menu,
+#pjWrapper .btn { color: #fff; background: #e37d4c; border: 1px solid #d27530;}
+
+#pjWrapper .dropdown-menu a { color: #fff; }
+#pjWrapper .dropdown-menu a:hover { background: #d27530; }
+
+#pjWrapper .btn:hover,
+#pjWrapper .btn.active { background: #d27530; border: 1px solid #bb682a;}
+
+.pjCalMonths table th { background: #fafafa; color: #5e5a59; }  
+
+#pjWrapper .thumbnail strong { color: #0e858e; }
+
+#pjWrapper .thumbnail,
+#pjWrapper .pjCalTable,
+#pjWrapper .pjCalMonths table,
+#pjWrapper .pjIcCalendarTable td,
+#pjWrapper .pjIcCalendarTable { background: #fff; }
+
+#pjWrapper .pjCalMonths th .active { background: #e37d4c; }
+
+#pjWrapper .pjIcCalendarTable td.pjIcMonthAlt:hover { background: #f3f5f4; }
+
+#pjWrapper .pjIcCalendarTable td:hover { background: #e37d4c; }

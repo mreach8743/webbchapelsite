@@ -1,0 +1,36 @@
+body #pjWrapper { background: #f8f8f6; }
+
+#pjWrapper a { color: #54b06f; } 
+
+#pjWrapper .dropdown-menu,
+#pjWrapper .btn { color: #fff; background: #9acf5b; border: 1px solid #77a63e;}
+
+#pjWrapper .dropdown-menu a { color: #fff; }
+#pjWrapper .dropdown-menu a:hover { background: #77a63e; }
+
+#pjWrapper .btn:hover,
+#pjWrapper .btn.active { background: #77a63e; border: 1px solid #699138;}
+
+.pjIcCalendarTable th { background: #54b06f; color: #fff; }  
+
+#pjWrapper .table-bordered, 
+#pjWrapper .table-bordered > tbody > tr > td, 
+#pjWrapper .table-bordered > tbody > tr > th, 
+#pjWrapper .table-bordered > tfoot > tr > td, 
+#pjWrapper .table-bordered > tfoot > tr > th, 
+#pjWrapper .table-bordered > thead > tr > td, 
+#pjWrapper .table-bordered > thead > tr > th,
+#pjWrapper .thumbnail  { border-color: #54b06f; }
+
+#pjWrapper .thumbnail,
+#pjWrapper .pjCalTable,
+#pjWrapper .pjCalMonths table,
+#pjWrapper .pjIcCalendarTable td,
+#pjWrapper .pjIcCalendarTable { background: #f8f8f6; }
+
+#pjWrapper .pjIcCalendarTable td.pjIcMonthAlt:hover,
+#pjWrapper .pjIcCalendarTable td.pjIcMonthAlt { background: #e8e6e6; }
+
+#pjWrapper .pjCalMonths th .active { background: #54b06f; }
+
+#pjWrapper .pjIcCalendarTable td:hover { background: #9acf5b; }

@@ -1,0 +1,2 @@
+"first_name","last_name","email","password","phone","website","gender","age","birthday","address","city","state","country_id","zip","company_name","ip","created","status"
+"Steve","Atkinson","steve@atkinson.com","pass","12345678","http://www.atkinson.com","M","30","1983-11-01","Hyde Park Corner","London","London","259","SE16","Atkinson Ltd","127.0.0.1","2013-11-12 13:43:27","T"
