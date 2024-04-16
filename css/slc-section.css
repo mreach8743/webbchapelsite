@@ -1,0 +1,15 @@
+.slc-section {
+    header div {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 3rem;
+    }
+    img {
+        width: 350px;
+        height: 500px;
+    }
+    h1 {
+        text-transform: uppercase;
+    }
+}
