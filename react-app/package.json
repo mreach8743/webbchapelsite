@@ -6,8 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:production": "NODE_ENV=production tsc -b && vite build --mode production",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "lint:fix": "eslint . --fix",
+    "preview": "vite preview",
+    "serve": "vite preview --port 3000",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@types/react-router-dom": "^5.3.3",
