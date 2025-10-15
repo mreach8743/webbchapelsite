@@ -1,5 +1,6 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import CognitoForm from '../components/CognitoForm';
 
 const ContactPage: React.FC = () => {
   return (
@@ -106,17 +107,10 @@ const ContactPage: React.FC = () => {
               </h2>
               
               <div className="bg-gray-50 rounded-lg p-6">
-                <div 
-                  className="cognito-form"
-                  data-key="V3ZbR_hZIEKuz9M3qRqiEA"
-                  data-form="93"
-                >
-                  <script 
-                    src="https://www.cognitoforms.com/f/seamless.js" 
-                    data-key="V3ZbR_hZIEKuz9M3qRqiEA" 
-                    data-form="93"
-                  />
-                </div>
+                <CognitoForm 
+                  dataKey="V3ZbR_hZIEKuz9M3qRqiEA"
+                  dataForm="93"
+                />
               </div>
             </div>
           </div>

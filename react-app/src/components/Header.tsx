@@ -63,6 +63,13 @@ const Header: React.FC = () => {
               >
                 LIVESTREAM
               </Link>
+              
+              <Link 
+                to="/sitb" 
+                className="text-gray-800 hover:text-church-blue font-semibold transition-colors"
+              >
+                SITB
+              </Link>
             </nav>
 
             {/* Logo */}
@@ -103,6 +110,12 @@ const Header: React.FC = () => {
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
                   >
                     GIVING
+                  </Link>
+                  <Link 
+                    to="/summerlearningcamp" 
+                    className="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
+                  >
+                    SUMMER CAMP
                   </Link>
                   <a 
                     href="https://onrealm.org/WebbChapelChurch" 

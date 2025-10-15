@@ -9,6 +9,9 @@ import ContactPage from './pages/ContactPage';
 import GivingPage from './pages/GivingPage';
 import ImNewHerePage from './pages/ImNewHerePage';
 import SmallGroupsPage from './pages/SmallGroupsPage';
+import LiveStreamingPage from './pages/LiveStreamingPage';
+import SitbPage from './pages/SitbPage';
+import SummerLearningCampPage from './pages/SummerLearningCampPage';
 
 function App() {
   return (
@@ -23,6 +26,9 @@ function App() {
           <Route path="/giving" element={<GivingPage />} />
           <Route path="/imnewhere" element={<ImNewHerePage />} />
           <Route path="/smallgroups" element={<SmallGroupsPage />} />
+          <Route path="/livestreaming" element={<LiveStreamingPage />} />
+          <Route path="/sitb" element={<SitbPage />} />
+          <Route path="/summerlearningcamp" element={<SummerLearningCampPage />} />
           {/* Add more routes as we create more pages */}
         </Routes>
       </Layout>
