@@ -35,11 +35,12 @@ const LiveStreamingPage: React.FC = () => {
               {/* Live Stream Embed */}
               <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
                 <iframe
-                  src="https://www.christianworldmedia.com/1772-1722-/flashi-s/livestream.html"
+                  src="https://www.youtube.com/embed/live_stream?channel=UC-ndzr4_oUM97yv5K_-B4vQ"
                   className="absolute top-0 left-0 w-full h-full rounded-lg"
                   frameBorder="0"
                   allowFullScreen
-                  title="Live Stream"
+                  title="Webb Chapel Livestream"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 />
               </div>
               
@@ -58,29 +59,56 @@ const LiveStreamingPage: React.FC = () => {
         </div>
 
         {/* Sermon Archives Section */}
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-          <div className="bg-gray-50 px-6 py-4 border-b">
-            <h2 className="text-2xl font-bold text-gray-800 flex items-center">
-              <Archive className="w-6 h-6 mr-3" />
-              Sermon Archives
-            </h2>
-            <p className="text-gray-600 mt-2">
-              Access our complete library of past sermons and teachings
-            </p>
+        <div className="space-y-8">
+          {/* 2025 Archives */}
+          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div className="bg-gray-50 px-6 py-4 border-b">
+              <h2 className="text-2xl font-bold text-gray-800 flex items-center">
+                <Archive className="w-6 h-6 mr-3" />
+                Sermon Archives 2025
+              </h2>
+              <p className="text-gray-600 mt-2">
+                Recent sermons and teachings from 2025
+              </p>
+            </div>
+            
+            <div className="p-6">
+              <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                <iframe
+                  src="https://www.youtube.com/embed/videoseries?list=PLom-0r33d-gAOWuczIHZAvbC_9eImSocp"
+                  className="absolute top-0 left-0 w-full h-full rounded-lg"
+                  frameBorder="0"
+                  allowFullScreen
+                  title="YouTube channel videos 2025"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                />
+              </div>
+            </div>
           </div>
-          
-          <div className="p-6">
-            {/* Sermon Archives Embed */}
-            <div className="w-full">
-              <iframe
-                src="https://www.christianworldmedia.com/_archiveapp/g1/default.asp?c=1772&sz=800"
-                width="100%"
-                height="600"
-                frameBorder="0"
-                allowTransparency={true}
-                title="Sermon Archives"
-                className="rounded-lg"
-              />
+
+          {/* 2024 Archives */}
+          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div className="bg-gray-50 px-6 py-4 border-b">
+              <h2 className="text-2xl font-bold text-gray-800 flex items-center">
+                <Archive className="w-6 h-6 mr-3" />
+                Sermon Archives 2024
+              </h2>
+              <p className="text-gray-600 mt-2">
+                Sermons and teachings from 2024
+              </p>
+            </div>
+            
+            <div className="p-6">
+              <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                <iframe
+                  src="https://www.youtube.com/embed/videoseries?list=PLom-0r33d-gCan9qQJRoJMLTce2Nq0u4L"
+                  className="absolute top-0 left-0 w-full h-full rounded-lg"
+                  frameBorder="0"
+                  allowFullScreen
+                  title="YouTube channel videos 2024"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                />
+              </div>
             </div>
           </div>
         </div>

@@ -4,20 +4,20 @@ import { Mic, BookOpen, Heart, Users } from 'lucide-react';
 const MinistersPage: React.FC = () => {
   const ministers = [
     {
-      name: "Paul Cartwright",
+      name: "Galon Jones",
       title: "Pulpit Minister",
-      image: "/images/leadership/ministers/pulpitministerCartwrightPaul.jpg",
-      bio: "Paul Cartwright came to Webb Chapel in August 2016 following eight years working with the youth and families of the congregation in Pearland, Texas, in the Houston area. Paul had grown up in Texas City and League City, Texas. He and his wife April met at Harding University and were married October 21, 2006. Paul and April welcomed their daughter Emma in September of 2010.",
-      education: "Paul earned a Bachelor of Arts degree in Bible with an emphasis in Youth and Family Ministry from Harding University. During the twelve years following graduation, Paul and April worked in ministries in Arkansas, California, and Texas, finally returning to Texas in 2008.",
-      experience: "In addition to preaching, Paul has experience which includes worship planning, song leading, special program planning, visitation, Bible studies, fellowships, hospital visitation, as well as work in other areas."
+      image: "/images/leadership/ministers/pulpitMinisterGalonJones.jpg",
+      bio: "Galon Jones grew up in the north Dallas area. He has been married to Sharon for over forty years and has three children and five grandchildren. He has a BS in Theology from Harding University. He has master's degrees in Theology, Marriage and Family Therapy, Conflict Resolution, Mediation, Negotiation and Divorce Mediation from Abilene Christian University. He served over 10 years church planting in Florianopolis, Brasil.",
+      education: "BS in Theology from Harding University. Master's degrees in Theology, Marriage and Family Therapy, Conflict Resolution, Mediation, Negotiation and Divorce Mediation from Abilene Christian University.",
+      experience: "Before coming to Webb Chapel, he served on staff for twenty years, in various ministry positions at the Greenville Oaks Church in Allen, TX. He currently serves as director of James Group Ministries."
     },
     {
-      name: "John Smith",
-      title: "Youth Minister",
-      image: "/images/leadership/ministers/youthministerSmithJohn.jpg",
-      bio: "John has been serving as our youth minister for several years, working with teenagers and young adults to help them grow in their faith.",
-      education: "Bachelor of Arts in Youth Ministry from Abilene Christian University",
-      experience: "Extensive experience in youth ministry, including mission trips, retreats, and discipleship programs."
+      name: "David Bates",
+      title: "Outreach Minister",
+      image: "/images/leadership/ministers/outreachMinisterDavidBates.jpg",
+      bio: "David Bates serves as our outreach minister, focusing on community engagement and evangelism efforts.",
+      education: "Bachelor of Arts in Ministry from Abilene Christian University",
+      experience: "Extensive experience in community outreach, evangelism, and church growth strategies."
     }
   ];
 
