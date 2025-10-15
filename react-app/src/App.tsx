@@ -11,6 +11,11 @@ import SmallGroupsPage from './pages/SmallGroupsPage';
 import LiveStreamingPage from './pages/LiveStreamingPage';
 import SitbPage from './pages/SitbPage';
 import SummerLearningCampPage from './pages/SummerLearningCampPage';
+import EldersPage from './pages/EldersPage';
+import DeaconsPage from './pages/DeaconsPage';
+import MinistersPage from './pages/MinistersPage';
+import StaffPage from './pages/StaffPage';
+import CalendarPage from './pages/CalendarPage';
 
 function App() {
   return (
@@ -28,6 +33,11 @@ function App() {
           <Route path="/livestreaming" element={<LiveStreamingPage />} />
           <Route path="/sitb" element={<SitbPage />} />
           <Route path="/summerlearningcamp" element={<SummerLearningCampPage />} />
+          <Route path="/elders" element={<EldersPage />} />
+          <Route path="/deacons" element={<DeaconsPage />} />
+          <Route path="/ministers" element={<MinistersPage />} />
+          <Route path="/staff" element={<StaffPage />} />
+          <Route path="/calendar" element={<CalendarPage />} />
           {/* Add more routes as we create more pages */}
         </Routes>
       </Layout>
