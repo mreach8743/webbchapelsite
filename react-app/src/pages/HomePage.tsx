@@ -14,45 +14,6 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* Member Announcements */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8">
-              WEBB CHAPEL MEMBER ANNOUNCEMENTS
-            </h1>
-            <div className="space-y-6">
-              <div className="flex justify-center">
-                <span className="text-2xl">————————————</span>
-              </div>
-              <div className="space-y-4">
-                <img 
-                  src="/src/assets/images/announcement1.png" 
-                  alt="Announcement 1" 
-                  className="mx-auto rounded-lg shadow-md max-w-2xl w-full h-auto"
-                />
-                <div className="flex justify-center">
-                  <span className="text-2xl">————————————</span>
-                </div>
-                <img 
-                  src="/src/assets/images/announcement2.png" 
-                  alt="Announcement 2" 
-                  className="mx-auto rounded-lg shadow-md max-w-2xl w-full h-auto"
-                />
-                <div className="flex justify-center">
-                  <span className="text-2xl">————————————</span>
-                </div>
-                <img 
-                  src="/src/assets/images/announcement3.jpeg" 
-                  alt="Announcement 3" 
-                  className="mx-auto rounded-lg shadow-md max-w-2xl w-full h-auto"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Welcome Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
@@ -85,6 +46,47 @@ const HomePage: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Member Announcements */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8">
+              WEBB CHAPEL MEMBER ANNOUNCEMENTS
+            </h1>
+            <div className="space-y-6">
+              <div className="flex justify-center">
+                <span className="text-2xl">————————————</span>
+              </div>
+              <div className="space-y-4">
+                <img 
+                  src="/src/assets/images/slider1.jpg" 
+                  alt="Announcement 1" 
+                  className="mx-auto rounded-lg shadow-md max-w-2xl w-full h-auto"
+                />
+                <div className="flex justify-center">
+                  <span className="text-2xl">————————————</span>
+                </div>
+                <img 
+                  src="/src/assets/images/slider2.jpg" 
+                  alt="Announcement 2" 
+                  className="mx-auto rounded-lg shadow-md max-w-2xl w-full h-auto"
+                />
+                <div className="flex justify-center">
+                  <span className="text-2xl">————————————</span>
+                </div>
+                <img 
+                  src="/src/assets/images/slider3.jpg" 
+                  alt="Announcement 3" 
+                  className="mx-auto rounded-lg shadow-md max-w-2xl w-full h-auto"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
 
       {/* Come and Get Involved Section */}
       <section className="py-16 bg-gray-50">

@@ -18,3 +18,11 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
+.header-background {
+  background: url(../src/assets/images/headerbg.jpg);
+}
+
+.church-blue-background {
+  background-color: #243f63;;
+}

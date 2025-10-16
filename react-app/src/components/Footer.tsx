@@ -1,8 +1,7 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { Home, Phone, Mail, Facebook, Twitter } from 'lucide-react';
 
-const Footer: React.FC = () => {
+function Footer() {
   return (
     <>
       {/* Main Footer */}

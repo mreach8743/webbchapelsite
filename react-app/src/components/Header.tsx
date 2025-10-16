@@ -1,17 +1,11 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronDown, Menu } from 'lucide-react';
 
-const Header: React.FC = () => {
+function Header() {
   return (
     <>
-      {/* Contact Bar */}
-      <div className="w-full text-center church-blue text-white font-bold py-2">
-        13425 Webb Chapel Road, Farmers Branch, Texas 75234&nbsp;&nbsp;|&nbsp;&nbsp;(972) 241-3293
-      </div>
-
       {/* Main Header */}
-      <header className="bg-white shadow-md h-32 flex items-center">
+      <header className="bg-white shadow-md h-32 flex items-center header-background">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
             {/* Left Navigation */}
@@ -143,6 +137,11 @@ const Header: React.FC = () => {
           </div>
         </div>
       </header>
+
+      {/* Contact Bar */}
+      <div className="w-full text-center church-blue-background text-white font-bold py-2">
+        13425 Webb Chapel Road, Farmers Branch, Texas 75234&nbsp;&nbsp;|&nbsp;&nbsp;(972) 241-3293
+      </div>
     </>
   );
 };
