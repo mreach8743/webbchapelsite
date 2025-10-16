@@ -58,12 +58,6 @@ function Header() {
                 LIVESTREAM
               </Link>
               
-              <Link 
-                to="/sitb" 
-                className="text-gray-800 hover:text-church-blue font-semibold transition-colors"
-              >
-                SITB
-              </Link>
             </nav>
 
             {/* Logo */}
