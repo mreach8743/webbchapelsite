@@ -1,17 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import HeroSlider from '../components/HeroSlider';
 
 const HomePage: React.FC = () => {
   return (
     <div className="w-full">
       {/* Hero Slider Section */}
       <section className="relative">
-        <div className="w-full h-96 bg-gradient-to-r from-church-blue to-blue-600 flex items-center justify-center">
-          <div className="text-center text-white">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">WEBB CHAPEL</h1>
-            <h2 className="text-2xl md:text-3xl font-light">CHURCH OF CHRIST</h2>
-          </div>
-        </div>
+        <HeroSlider />
       </section>
 
       {/* Welcome Section */}
@@ -46,47 +42,6 @@ const HomePage: React.FC = () => {
           </div>
         </div>
       </section>
-
-      {/* Member Announcements */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8">
-              WEBB CHAPEL MEMBER ANNOUNCEMENTS
-            </h1>
-            <div className="space-y-6">
-              <div className="flex justify-center">
-                <span className="text-2xl">————————————</span>
-              </div>
-              <div className="space-y-4">
-                <img 
-                  src="/src/assets/images/slider1.jpg" 
-                  alt="Announcement 1" 
-                  className="mx-auto rounded-lg shadow-md max-w-2xl w-full h-auto"
-                />
-                <div className="flex justify-center">
-                  <span className="text-2xl">————————————</span>
-                </div>
-                <img 
-                  src="/src/assets/images/slider2.jpg" 
-                  alt="Announcement 2" 
-                  className="mx-auto rounded-lg shadow-md max-w-2xl w-full h-auto"
-                />
-                <div className="flex justify-center">
-                  <span className="text-2xl">————————————</span>
-                </div>
-                <img 
-                  src="/src/assets/images/slider3.jpg" 
-                  alt="Announcement 3" 
-                  className="mx-auto rounded-lg shadow-md max-w-2xl w-full h-auto"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      
 
       {/* Come and Get Involved Section */}
       <section className="py-16 bg-gray-50">
