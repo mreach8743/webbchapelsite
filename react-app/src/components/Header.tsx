@@ -1,15 +1,25 @@
 import { Link } from 'react-router-dom';
-import { ChevronDown, Menu } from 'lucide-react';
+import { ChevronDown, Menu, X } from 'lucide-react';
+import { useState } from 'react';
 
 function Header() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   return (
     <>
       {/* Main Header */}
       <header className="bg-white shadow-md h-32 flex items-center header-background">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
-            {/* Left Navigation */}
-            <nav className="flex items-center space-x-6">
+            {/* Mobile Menu Button - Left side */}
+            <button 
+              className="md:hidden p-2"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+
+            {/* Desktop Left Navigation */}
+            <nav className="hidden md:flex items-center space-x-6">
               <Link 
                 to="/" 
                 className="text-gray-800 hover:text-church-blue font-semibold transition-colors"
@@ -57,10 +67,9 @@ function Header() {
               >
                 LIVESTREAM
               </Link>
-              
             </nav>
 
-            {/* Logo */}
+            {/* Logo - Centered on mobile, normal position on desktop */}
             <div className="flex-shrink-0">
               <Link to="/">
                 <img 
@@ -71,8 +80,8 @@ function Header() {
               </Link>
             </div>
 
-            {/* Right Navigation */}
-            <nav className="flex items-center space-x-6">
+            {/* Desktop Right Navigation */}
+            <nav className="hidden md:flex items-center space-x-6">
               <Link 
                 to="/smallgroups" 
                 className="text-gray-800 hover:text-church-blue font-semibold transition-colors"
@@ -124,13 +133,122 @@ function Header() {
               </Link>
             </nav>
 
-            {/* Mobile Menu Button */}
-            <button className="md:hidden p-2">
-              <Menu className="h-6 w-6" />
-            </button>
+            {/* Spacer for mobile to balance the hamburger button */}
+            <div className="md:hidden w-10"></div>
           </div>
         </div>
       </header>
+
+      {/* Mobile Menu */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden bg-white shadow-lg border-t">
+          <div className="container mx-auto px-4 py-4">
+            <nav className="space-y-4">
+              <Link 
+                to="/" 
+                className="block text-gray-800 hover:text-church-blue font-semibold transition-colors py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                HOME
+              </Link>
+              
+              <div className="space-y-2">
+                <div className="text-gray-800 font-semibold py-2">LEADERSHIP</div>
+                <div className="pl-4 space-y-2">
+                  <Link 
+                    to="/elders" 
+                    className="block text-gray-600 hover:text-church-blue transition-colors py-1"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    SHEPHERDS
+                  </Link>
+                  <Link 
+                    to="/deacons" 
+                    className="block text-gray-600 hover:text-church-blue transition-colors py-1"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    DEACONS
+                  </Link>
+                  <Link 
+                    to="/ministers" 
+                    className="block text-gray-600 hover:text-church-blue transition-colors py-1"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    MINISTERS
+                  </Link>
+                  <Link 
+                    to="/staff" 
+                    className="block text-gray-600 hover:text-church-blue transition-colors py-1"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    STAFF
+                  </Link>
+                </div>
+              </div>
+
+              <Link 
+                to="/livestreaming" 
+                className="block text-gray-800 hover:text-church-blue font-semibold transition-colors py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                LIVESTREAM
+              </Link>
+              
+              <Link 
+                to="/smallgroups" 
+                className="block text-gray-800 hover:text-church-blue font-semibold transition-colors py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                SMALL GROUPS
+              </Link>
+              
+              <div className="space-y-2">
+                <div className="text-gray-800 font-semibold py-2">MEMBERS</div>
+                <div className="pl-4 space-y-2">
+                  <Link 
+                    to="/calendar" 
+                    className="block text-gray-600 hover:text-church-blue transition-colors py-1"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    CALENDAR
+                  </Link>
+                  <Link 
+                    to="/giving" 
+                    className="block text-gray-600 hover:text-church-blue transition-colors py-1"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    GIVING
+                  </Link>
+                  <Link 
+                    to="/summerlearningcamp" 
+                    className="block text-gray-600 hover:text-church-blue transition-colors py-1"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    SUMMER CAMP
+                  </Link>
+                  <a 
+                    href="https://onrealm.org/WebbChapelChurch" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="block text-gray-600 hover:text-church-blue transition-colors py-1"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    REALM LOGIN
+                  </a>
+                </div>
+              </div>
+
+              <Link 
+                to="/contact" 
+                className="block text-gray-800 hover:text-church-blue font-semibold transition-colors py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                CONTACT
+              </Link>
+            </nav>
+          </div>
+        </div>
+      )}
 
       {/* Contact Bar */}
       <div className="w-full text-center church-blue-background text-white font-bold py-2">
