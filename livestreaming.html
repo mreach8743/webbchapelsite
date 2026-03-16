@@ -34,23 +34,67 @@
 	<div id="default_page_row" class="container">
 		<div class="row">
             <section class="tcvpb_section_tc section_with_header">
-				<div class="tcvpb_section_content">
-					<div class="tcvpb_container">
-						<div class="tcvpb_column_tc_span12">
-							<div class="tcvpb-videoWrapper-vimeo ">
-                                <iframe
-                                        src="https://www.youtube.com/embed/live_stream?channel=UC-ndzr4_oUM97yv5K_-B4vQ"
-                                        title="Webb Chapel Livestream"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen>
-                                </iframe>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+                <div class="tcvpb_section_content">
+                    <div class="tcvpb_container">
+                        <div class="tcvpb_column_tc_span12">
+                            <div id="liveWrapper">
+                                <div id="liveFrameContainer" class="tcvpb-videoWrapper-vimeo ">
+                                    <iframe
+                                            id="liveStreamIframe"
+                                            src="https://www.youtube.com/embed/live_stream?channel=UC-ndzr4_oUM97yv5K_-B4vQ"
+                                            title="Webb Chapel Livestream"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen>
+                                    </iframe>
+                                </div>
+                                <div id="liveOfflineMsg" style="display:none; text-align:center; padding:40px; font-size:1.1rem; color:#333;">
+                                    Livestream is currently offline. Join us Sundays at 9:30AM CST for our live service.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <h2 style="text-align: center;">SERMON ARCHIVES 2026</h2>
+
+            <script>
+                (function(){
+                    var channelId = 'UC-ndzr4_oUM97yv5K_-B4vQ';
+                    var apiKey = 'AIzaSyAnIMamuOweVNwDLbQr1NUF2yPiGDsdf8w'; 
+                    var frame = document.getElementById('liveStreamIframe');
+                    var frameContainer = document.getElementById('liveFrameContainer');
+                    var offline = document.getElementById('liveOfflineMsg');
+
+                    if (!frame || !frameContainer || !offline) return;
+                    if (!apiKey || apiKey === 'YOUR_API_KEY') {
+                        // no configured key: keep embed visible
+                        return;
+                    }
+
+                    var url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=' +
+                        encodeURIComponent(channelId) +
+                        '&type=video&eventType=live&maxResults=1&key=' +
+                        encodeURIComponent(apiKey);
+
+                    fetch(url)
+                        .then(function(response){ return response.json(); })
+                        .then(function(data){
+                            if (data.items && data.items.length > 0 && data.items[0].id && data.items[0].id.videoId) {
+                                var liveId = data.items[0].id.videoId;
+                                frame.src = 'https://www.youtube.com/embed/' + liveId + '?autoplay=1';
+                                frameContainer.style.display = '';
+                                offline.style.display = 'none';
+                            } else {
+                                frameContainer.style.display = 'none';
+                                offline.style.display = 'block';
+                            }
+                        })
+                        .catch(function(err){
+                            console.error('YouTube live status check failed', err);
+                        });
+                })();
+            </script>
             <section class="tcvpb_section_tc section_with_header">
                 <div class="tcvpb_section_content">
                     <div class="tcvpb_container">
