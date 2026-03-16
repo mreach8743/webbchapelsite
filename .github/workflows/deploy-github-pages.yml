@@ -12,14 +12,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Upload artifact for GitHub Pages
-        uses: actions/upload-pages-artifact@v1
+      - name: Deploy to GitHub Pages (peaceiris)
+        uses: peaceiris/actions-gh-pages@v5
         with:
-          path: './'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: './'
+          publish_branch: gh-pages
+          publish_commit_message: 'Deploy site from development branch via GitHub Actions'
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
 
-  deploy-pages:
-    needs: deploy
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+# Optionally, if you want this to run in a dedicated deployment job,
+# you can split the build and deploy steps. For static HTML only, this is enough.
+
